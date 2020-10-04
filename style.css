@@ -20,8 +20,9 @@ section,aside,figure,footer{
 }
 
 ol, ul{
-	list-style: none;  
+	list-style: none;
 }
+
 
 html{
     font:14px/1.3 "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", Arial, Helvetica, Tahoma, sans-serif;
@@ -145,7 +146,7 @@ article section:nth-child(even){
 
 article section:nth-child(odd){
 	background-image: -moz-linear-gradient(top, #ececec, #d9d9d9);
-	background-image: -webkit-gradient(linear, center top, center bottom, from(#ececec), to(#d9d9d9));
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#f8f8f8), to(#f2f2f2));
 	background-image: -o-linear-gradient(top, #ececec, #d9d9d9);
 	background-image: linear-gradient(top, #ececec, #d9d9d9);
 	border:solid 1px;
@@ -187,10 +188,10 @@ article section a figure img{
 	}
 }
 
-/*	カテゴリ画像の説明文字　*/
+/*	各店のタイトル文字設定　*/
 article section a h2{
 	width:60.5%;
-	color:#9CA695;
+	color:#2196F3;
 	float:right;
 }
 
@@ -270,3 +271,32 @@ address p{
 	font-size:0.714em;
 	text-align:center;}
 
+
+
+	ul {
+		width: 200px;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background-color: #eeeeee;
+	}
+	li a {
+		display: block;
+		padding: 8px 16px;
+		text-decoration: none;
+		color: #000000;
+	}
+	li {
+		text-align: center;
+	}
+	li:last-child {
+		border-bottom: none;
+	}
+	li a.active {
+		color: #ffffff;
+		background-color: #da3c41;
+	}
+	li a:hover:not(.active) {
+		color: #ffffff;
+		background-color: #1b2538;
+	}
