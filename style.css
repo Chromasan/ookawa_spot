@@ -184,6 +184,8 @@ html{
 	レイアウト
 ------------------------------------------------------------*/
 body{
+	position: relative;
+	z-index: 0px;
 	background:#f1c40f;
 	width:100%;
 	color:#383c55;
