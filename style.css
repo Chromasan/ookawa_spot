@@ -1,11 +1,47 @@
 @charset "UTF-8";
 
+/*各項目の要点欄の装飾*/
+.cp_point {
+	position: relative;
+	margin: 40px 0 30px;
+	padding: 25px 20px 15px 40px;
+	border: 1px dotted #1b2538;
+	background-color: #f8fdff;
+	border-radius: 8px;
+}
+.cp_point::before {
+	position: absolute;
+	top: -1em;
+	left: 1em;
+	content: attr(title);
+	padding: .4em 1em 0;
+	font-size: 90%;
+	font-weight: bold;
+	font-style: italic;
+	color: #fff;
+	height: 27px;
+	background-color: #1b2538;
+	border-radius: 4px;
+}
+.cp_point li {
+	position: relative;
+	list-style-type: none;
+}
+
+
+
+
+
+
+
 /*左上のメニューの追加*/
 /*参照先：*/
 header {
+  /*ここのz-indexで解決した*/
+  z-index: 999;
   position: fixed;
   padding:10px;
-  background:#2f3640;
+  background:#2c3e50;
 }
 
 
@@ -70,7 +106,7 @@ header {
   width: 90%;
   max-width: 250px;/*最大幅（お好みで調整を）*/
   height: 100%;
-  background: #c23616;
+  background: #2c3e50;
   transition: .3s ease-in-out;
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
@@ -147,7 +183,7 @@ html{
 	レイアウト
 ------------------------------------------------------------*/
 body{
-	background:#dcdde1;
+	background:#f1c40f;
 	width:100%;
 	color:#383c55;
 }
@@ -227,9 +263,18 @@ article .title h2{
 	text-align:center;margin:auto;
   padding:10px;
 	margin:0;
-	border:solid 2px #e84118;
-	background:#192a56;
-	color: #f5f6fa;
+	border:solid 5px #2c3e50;
+	background:#e74c3c;
+	color          : #ffffff;            /* 文字の色 */
+	text-shadow    :
+	        2px  2px 1px #000000,
+	       -2px  2px 1px #000000,
+	        2px -2px 1px #000000,
+	       -2px -2px 1px #000000,
+	        2px  0px 1px #000000,
+	        0px  2px 1px #000000,
+	       -2px  0px 1px #000000,
+	        0px -2px 1px #000000;        /* 文字の影 */
 }
 
 /*---------------------
@@ -241,13 +286,18 @@ article section{
 
 article section:nth-child(even){
 	background-color: #f5f6fa;
-
 	border-color:#FFF transparent #D7E5CF;
+	border-right:solid 5px #2c3e50;
+	border-left:solid 5px #2c3e50;
+	border-bottom:solid 5px #2c3e50;
 }
 
 article section:nth-child(odd){
 	background-color: #dcdde1;
 	border-color:#FFF transparent #D7E5CF;
+	border-right:solid 5px #2c3e50;
+	border-left: solid 5px #2c3e50;
+	border-bottom:solid 5px #2c3e50;
 }
 
 article section a{
@@ -368,30 +418,30 @@ address p{
 padding:4% 5px 4% 10px
 8px 16px
 
-	ul {
+ul.menu{
 		width: 200px;
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
 		background-color: #3498db;
 	}
-	li a {
+ul.menu	li a {
 		display: block;
 		padding: 8px 16px;
 		text-decoration: none;
 		color: #eeeeee;
 	}
-	li {
+ul.menu	li {
 		text-align: center;
 	}
-	li:last-child {
+ul.menu	li:last-child {
 		border-bottom: none;
 	}
-	li a.active {
+ul.menu	li a.active {
 		color: #f5f6fa;
 		background-color: #f5f6fa;
 	}
-	li a:hover:not(.active) {
+.menu	li a:hover:not(.active) {
 		color: #192a56;
-		background-color: #f5f6fa;
+		background-color: #e74c3c;
 	}
