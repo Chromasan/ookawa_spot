@@ -259,9 +259,11 @@ article{
 /*---------------------
 	カテゴリタイトル
   padding:3% 10px;
+
 --------------------*/
 article .title{
-  margin-top:45px;
+	display:block;
+	padding-top:43px;
 }
 
 article .title h2{
@@ -422,6 +424,11 @@ address p{
 
 padding:4% 5px 4% 10px
 8px 16px
+
+
+
+
+
 
 ul.menu{
 		width: 200px;
