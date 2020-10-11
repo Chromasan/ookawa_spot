@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
+.box27 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #f1c40f;
+		background: #ecf0f1;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #f1c40f;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 p {
+    margin: 0;
+    padding: 0;
+}
+
 /*各項目の要点欄の装飾*/
 .cp_point {
 	position: relative;
@@ -309,49 +335,24 @@ article section:nth-child(odd){
 
 article section a{
 	background:url(img/link_icon.png) no-repeat right center;
-	padding-right:4%;
 	display:block;
 	overflow:hidden;
 }
 
-/*	カテゴリ画像　*/
-article section a figure{
-	width:35%;
-	margin-right:10px;
-	overflow:hidden;
-
-	border:solid 1px #9CA695;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
-
-	float:left;}
-
-article section a figure img{
-	background:#9CA695;
-	width:100%;
-	margin-bottom:-4.5%;
-
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;}
-
-@media screen and (min-width:480px) {
-	article section a figure{
-		padding-bottom:0.5%;
-	}
-}
 
 /*	各店のタイトル文字設定　*/
-article section a h2{
-	width:60.5%;
-	color:#273c75;
-	float:right;
+article section a	h2{
+	color:#ecf0f1;
+  padding: 1rem 2rem;
+  border-left: 10px solid #e74c3c;
+  background:#2c3e50;
+	/*店名の長さに合わせる*/
+	display: inline-block;
 }
 
+
 article section a p{
-	width:60.5%;
-	float:right;
+	width:100%;
 }
 
 /*------------------------------------------------------------
