@@ -38,7 +38,7 @@
 /*参照先：*/
 header {
   /*ここのz-indexで解決した*/
-  z-index: 999;
+  z-index: 100;
   position: fixed;
   padding:10px;
   background:#2c3e50;
@@ -97,6 +97,7 @@ header {
 
 /*メニューの中身*/
 #nav-content {
+	z-index: 1000;
 	opacity:1;
   overflow: auto;
   position: fixed;
