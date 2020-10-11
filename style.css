@@ -248,6 +248,8 @@ header p.des{
 
 ------------------------------------------------------------*/
 article{
+	position: relative;
+	z-index: 0px;
 	width:100%;
   overflow:hidden;
 }
