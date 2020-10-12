@@ -1,5 +1,51 @@
 @charset "UTF-8";
 
+
+/* ここから下がボタンのCSS　*/
+.btn-push1 {
+  display:inline-block;/*コレ*/
+  text-align:center;
+  background-color: #3498db;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border-bottom: 4px solid #2980b9;
+}
+
+.btn-push1:active {
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+
+.btn-push2 {
+  display:inline-block;/*コレ*/
+  text-align:center;
+  background-color: #2ecc71;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border-bottom: 4px solid #27ae60;
+}
+.btn-push2:active {
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
 .box27 {
     position: relative;
     margin: 2em 0;
@@ -333,11 +379,8 @@ article section:nth-child(odd){
 	border-bottom:solid 5px #2c3e50;
 }
 
-article section a{
-	background:url(img/link_icon.png) no-repeat right center;
-	display:block;
-	overflow:hidden;
-}
+
+/*	右側の出っ張りは削除した　*/
 
 
 /*	各店のタイトル文字設定　*/
