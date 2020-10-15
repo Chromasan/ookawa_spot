@@ -1,3 +1,25 @@
+body{
+  background-size: cover;
+  position: relative;
+
+}
+
+body:before{
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
 .article{
     position:relative;
     top:60px;
@@ -28,7 +50,7 @@
 	margin: 0 0 1px 0;
 	cursor: pointer;
   color:#000000;
-
+  background-color: #ffffff;
 }
 
 .cp_actab .cp_actab-content {
@@ -62,7 +84,7 @@
 	margin: 0 0 1px 0;
 	cursor: pointer;
   color:#ffffff;
-  background:#000000;
+  background:#e74c3c;
 }
 /* Icon */
 .cp_actab label::after {
@@ -88,7 +110,92 @@
 
 
 
+/*電話番号の装飾*/
+.tel{
+  color: #e74c3c;
+  text-align: center;
+  position: relative;;
+}
 
+/* ここから下がボタンのCSS　*/
+.buds{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.cp_button08 {
+  font-size: 15px;
+  font-weight: 500;
+	display: inline-block;
+	width: 160px;
+	padding: 1em;
+	line-height: 1.4;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.2s, color 0.2s, width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-radius 0.2s;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 0.2em;
+	background: transparent;
+}
+.cp_button08:hover {
+	width: 180px;
+	color: #000000;
+  font-size:15px;
+	border-radius: 0.5em;
+	border: 1px solid #e74c3c;
+	background-color: #e74c3c;
+}
+.cp_button08:active {
+	border-color: #e74c3c;
+	background-color: #e74c3c;
+}
+.cp_button08:focus {
+	color: #e74c3c;
+	border: 1px solid #e74c3c;
+}
+.cp_button08:focus:hover {
+	color: #ffffff;
+}
+
+
+
+
+/*記事の中の項目見出し*/
+.cp_headline10 {
+	position: relative;
+	height: 0.3em;
+	color: #000000;
+  font-size: 20px;
+	background-color: #ffffff;/*背景色と合わせる*/
+	background-image:
+		-webkit-linear-gradient(135deg,
+		#e74c3c 25%, transparent 25%,
+		transparent 50%, #e74c3c 50%,
+		#e74c3c 75%, transparent 75%,
+		transparent);
+	background-image:
+		linear-gradient(-45deg,
+		#e74c3c 25%, transparent 25%,
+		transparent 50%, #e74c3c 50%,
+		#e74c3c 75%, transparent 75%,
+		transparent);
+	background-size: 10px 10px;
+}
+.cp_headline10 span {
+	position: absolute;
+	display: inline-block;
+	margin-top: -0.5em;
+	margin-left: 0.8em;
+	padding: 0em 0.5em 0em 0.5em;
+	background: #ffffff;/*背景色と合わせる*/
+}
+
+
+
+
+/*menuコンテンツ*/
 * {
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
@@ -106,8 +213,9 @@ z-index: 1;
 top: 0;
 left: 0;
 }
-/*menuコンテンツ*/
+
 .cp_fullscreenmenu .menu {
+opacity:0.85;
 position: fixed;
 top: 0;
 left: 0;
@@ -126,15 +234,15 @@ justify-content: center;
 .cp_fullscreenmenu .menu > div {
 display: flex;
 overflow: hidden;
-width: 200vw;
-height: 200vw;
+width: 250vw;
+height: 250vw;
 transition: all 0.2s ease;
 -webkit-transform: scale(0);
 transform: scale(0);
 text-align: center;
 color: #fefefe;
 border-radius: 50%;
-background: #2ecc71;
+background: #000000;
 flex: none;
 -webkit-backface-visibility: hidden;
 backface-visibility: hidden;
@@ -163,7 +271,7 @@ cursor: pointer;
 transition: color 0.2s ease;
 }
 .cp_fullscreenmenu .menu > div > ul > li > a:hover {
-color: #e5e5e5;
+color: #e74c3c;
 }
 .cp_fullscreenmenu .menu > div > ul > li > a:hover:after {
 width: 100%;
@@ -177,7 +285,7 @@ width: 0;
 height: 2px;
 content: '';
 transition: width 0.2s ease;
-background: #e5e5e5;
+background: #e74c3c;
 }
 /*クリックしたらメニューが開閉の動作*/
 .cp_fullscreenmenu .toggle {
@@ -247,7 +355,7 @@ padding: 0.5em 1em;
 cursor: pointer;
 transition: box-shadow 0.2s ease;
 border-radius: 0 0.12em 0.12em 0;
-background: #2ecc71;
+background: #000000;
 -webkit-backface-visibility: hidden;
 backface-visibility: hidden;
 }
@@ -258,7 +366,7 @@ display: block;
 width: 100%;
 height: 2px;
 transition: all 0.2s ease;
-background: #fefefe;
+background: #e74c3c;
 }
 .cp_fullscreenmenu .hamburger > span:before,
 .cp_fullscreenmenu .hamburger > span:after {
@@ -275,82 +383,4 @@ background: inherit;
 }
 .cp_fullscreenmenu .hamburger > span:after {
 top: 10px;
-}
-
-/*記事の中の項目見出し*/
-.cp_headline10 {
-	position: relative;
-	height: 0.3em;
-	color: #000000;
-  font-size: 20px;
-	background-color: #ffffff;/*背景色と合わせる*/
-	background-image:
-		-webkit-linear-gradient(135deg,
-		#2ecc71 25%, transparent 25%,
-		transparent 50%, #2ecc71 50%,
-		#2ecc71 75%, transparent 75%,
-		transparent);
-	background-image:
-		linear-gradient(-45deg,
-		#2ecc71 25%, transparent 25%,
-		transparent 50%, #2ecc71 50%,
-		#2ecc71 75%, transparent 75%,
-		transparent);
-	background-size: 10px 10px;
-}
-.cp_headline10 span {
-	position: absolute;
-	display: inline-block;
-	margin-top: -0.5em;
-	margin-left: 0.8em;
-	padding: 0em 0.5em 0em 0.5em;
-	background: #ffffff;/*背景色と合わせる*/
-}
-/* ここから下がボタンのCSS　*/
-.buds{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-
-.cp_button08 {
-  font-size: 15px;
-  font-weight: 500;
-	display: inline-block;
-	width: 160px;
-	padding: 1em;
-	line-height: 1.4;
-	cursor: pointer;
-	user-select: none;
-	transition: background-color 0.2s, color 0.2s, width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-radius 0.2s;
-	color: #000000;
-	border: 2px solid #000000;
-	border-radius: 0.2em;
-	background: transparent;
-}
-.cp_button08:hover {
-	width: 180px;
-	color: #000000;
-  font-size:20px;
-	border-radius: 0.5em;
-	border: 1px solid #2ecc71;
-	background-color: #2ecc71;
-}
-.cp_button08:active {
-	border-color: #2ecc71;
-	background-color: #2ecc71;
-}
-.cp_button08:focus {
-	color: #2ecc71;
-	border: 1px solid #2ecc71;
-}
-.cp_button08:focus:hover {
-	color: #ffffff;
-}
-
-/*電話番号の装飾*/
-.tel{
-  color: #2ecc71;
-  text-align: center;
-  position: relative;;
 }
