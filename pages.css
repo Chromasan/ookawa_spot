@@ -28,20 +28,7 @@
 	margin: 0 0 1px 0;
 	cursor: pointer;
   color:#000000;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(208, 147, 82, 0.6),
-      rgba(192, 134, 70, 0.6) 60%,
-      rgba(208, 147, 82, 0.6)
-    ),
-    repeating-radial-gradient(
-      ellipse at 60% 500%,
-      #c08646,
-      #c08646 0.2%,
-      #d09352 0.6%,
-      #d09352 1%
-    );
+
 }
 
 .cp_actab .cp_actab-content {
@@ -75,20 +62,7 @@
 	margin: 0 0 1px 0;
 	cursor: pointer;
   color:#ffffff;
-  background:
-    repeating-radial-gradient(
-      circle at -1000% 0%,
-      rgba(116, 77, 48, 0.7),
-      #573216 7.5%,
-      rgba(116, 77, 48, 0.9) 10%
-    ),
-    repeating-radial-gradient(
-      circle at -1000% 0%,
-      #573216,
-      #573216 0.1%,
-      #744d30 0.4%,
-      #744d30 0.5%
-    );
+  background:#000000;
 }
 /* Icon */
 .cp_actab label::after {
