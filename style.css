@@ -26,7 +26,6 @@ body:before{
 /* ボタンの大きさと位置をここで指定 */
 .btn__box {
     position: relative;
-    z-index: 0;
     width: 250px;
     height: 250px;
     line-height: 250px;
@@ -38,7 +37,6 @@ body:before{
 
 
 .btn__box a {
-  1z-index: 0;
     display: block;
     position: relative;
     font-size: 25px;
@@ -160,12 +158,12 @@ color: inherit;
 }
 .cp_fullscreenmenu {
 position: fixed;
-z-index: 100;
 top: 0;
 left: 0;
 }
 
 .cp_fullscreenmenu .menu {
+z-index: 100;
 opacity:0.85;
 position: fixed;
 top: 0;
@@ -183,6 +181,7 @@ align-items: center;
 justify-content: center;
 }
 .cp_fullscreenmenu .menu > div {
+z-index: 100;
 display: flex;
 overflow: hidden;
 width: 250vw;
@@ -228,8 +227,8 @@ color: #e74c3c;
 width: 100%;
 }
 .cp_fullscreenmenu .menu > div > ul > li > a:after {
-position: absolute;
 z-index: 100;
+position: absolute;
 bottom: -0.15em;
 left: 0;
 width: 0;
@@ -240,8 +239,9 @@ background: #e74c3c;
 }
 /*クリックしたらメニューが開閉の動作*/
 .cp_fullscreenmenu .toggle {
+  z-index: 100;
 position: absolute;
-z-index: 2;
+z-index: 110;
 top: 0;
 left: 0;
 width: 60px;
@@ -250,28 +250,34 @@ cursor: pointer;
 opacity: 0;
 }
 .cp_fullscreenmenu .toggle:checked + .hamburger > span {
+  z-index: 100;
 -webkit-transform: rotate(135deg);
 transform: rotate(135deg);
 }
 .cp_fullscreenmenu .toggle:checked + .hamburger > span:before,
 .cp_fullscreenmenu .toggle:checked + .hamburger > span:after {
+  z-index: 100;
 top: 0;
 -webkit-transform: rotate(90deg);
 transform: rotate(90deg);
 }
 .cp_fullscreenmenu .toggle:checked + .hamburger > span:after {
+  z-index: 100;
 opacity: 0;
 }
 .cp_fullscreenmenu .toggle:checked ~ .menu {
+  z-index: 100;
 visibility: visible;
 pointer-events: auto;
 }
 .cp_fullscreenmenu .toggle:checked ~ .menu > div {
+  z-index: 100;
 transition-duration: 0.2s;
 -webkit-transform: scale(1);
 transform: scale(1);
 }
 .cp_fullscreenmenu .toggle:checked ~ .menu > div > ul {
+z-index: 100;
 opacity: 1;
 }
 .cp_fullscreenmenu .toggle:checked ~ .menu > div > ul li:nth-of-type(1) {
@@ -311,6 +317,7 @@ background: #000000;
 backface-visibility: hidden;
 }
 .cp_fullscreenmenu .hamburger > span {
+  z-index: 100;
 position: relative;
 top: 50%;
 display: block;
@@ -333,5 +340,6 @@ transition: all 0.2s ease;
 background: inherit;
 }
 .cp_fullscreenmenu .hamburger > span:after {
+  z-index: 100;
 top: 10px;
 }
