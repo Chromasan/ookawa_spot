@@ -25,6 +25,37 @@ body:before{
     top:60px;
 }
 
+
+/*最終ページのみの装飾*/
+.box27 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #e74c3c;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    background: #e74c3c;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+
 /*記事リスト*/
 .cp_actab {
   padding-left: 55px;
@@ -323,18 +354,7 @@ transform: scale(1);
 .cp_fullscreenmenu .toggle:checked ~ .menu > div > ul {
 opacity: 1;
 }
-.cp_fullscreenmenu .toggle:checked ~ .menu > div > ul li:nth-of-type(1) {
-transition-delay: 0s;
-}
-.cp_fullscreenmenu .toggle:checked ~ .menu > div > ul li:nth-of-type(2) {
-transition-delay: 0s;
-}
-.cp_fullscreenmenu .toggle:checked ~ .menu > div > ul li:nth-of-type(3) {
-transition-delay: 0s;
-}
-.cp_fullscreenmenu .toggle:checked ~ .menu > div > ul li:nth-of-type(4) {
-transition-delay: 0s;
-}
+
 .cp_fullscreenmenu .toggle:hover + .hamburger {
 box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -355,7 +375,7 @@ padding: 0.5em 1em;
 cursor: pointer;
 transition: box-shadow 0.2s ease;
 border-radius: 0 0.12em 0.12em 0;
-background: #000000;
+background: #e74c3c;
 -webkit-backface-visibility: hidden;
 backface-visibility: hidden;
 }
@@ -366,7 +386,7 @@ display: block;
 width: 100%;
 height: 2px;
 transition: all 0.2s ease;
-background: #e74c3c;
+background: #ffffff;
 }
 .cp_fullscreenmenu .hamburger > span:before,
 .cp_fullscreenmenu .hamburger > span:after {
