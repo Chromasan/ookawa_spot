@@ -33,8 +33,8 @@ body:before{
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
+    border: 3px solid;
 }
-
 
 .btn__box a {
     display: block;
@@ -43,68 +43,7 @@ body:before{
     font-weight: 600;
 }
 
-/* 線(ボーダー)のスタイル 共通 */
-.btn__box:before,
-.btn__box:after,
-.btn__box a:before,
-.btn__box a:after {
-    content: '';
-    position: absolute;
-    background: #ffffff; /*線の色*/
-}
 
-/*アニメーションが常時発動されるように設定した*/
-/* 下のボーダー */
-.btn__box:before {
-    bottom: 0;
-    left: -250px;
-    width: 250px;
-    height: 10px;
-    animation: leftAnim 3s linear 0s infinite;
-}
-/* 右のボーダー */
-.btn__box:after {
-    bottom: -250px;
-    right: 0;
-    width: 10px;
-    height: 250px;
-    animation: bottomAnim 3s linear 1.5s infinite;
-}
-/* 上のボーダー */
-.btn__box a:before {
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 10px;
-    animation: rightAnim 3s linear 3s infinite;
-}
-/* 左のボーダー */
-.btn__box a:after {
-    top: -250px;
-    left: 0;
-    width: 10px;
-    height: 250px;
-    animation: topAnim 3s linear 4.5s infinite;
-}
-
-
-/* 各アニメーション */
-@keyframes topAnim {
-    0% {top:-250px;}
-    100% {top:250px;}
-}
-@keyframes bottomAnim {
-    0% {bottom:-250px;}
-    100% {bottom:250px;}
-}
-@keyframes rightAnim {
-    0% {right:-250px;}
-    100% {right:250px;}
-}
-@keyframes leftAnim {
-    0% {left:-250px;}
-    100% {left:250px;}
-}
 
 /*レビューボタン*/
 .cp_button08 {
